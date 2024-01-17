@@ -1,0 +1,219 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            body{
+                height: 100vh;
+                width: 100vw;
+            }
+            .navbar{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: dodgerblue;
+                padding-top: 10px;
+                color: white;
+               
+                font-size: 1rem;
+                font-weight: 700;
+                height: 80px;
+            
+            }
+            .title{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 2rem;
+            
+            }
+            .subtitle{
+                padding-top: 2px;
+                padding-bottom: 20px;
+            }
+            
+            .skills-title{
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+
+            #skills{
+             margin: 20px;
+             height: 3.5rem;
+             width: 70%;
+             background-color: #e3e8ea;
+             border: 0;
+             padding-left: 5px;
+            }
+
+            .skills-section{
+                color: dodgerblue;
+            }
+
+            .Project-title{
+                padding-top: 20px;
+                padding-left: 20px;
+                color: dodgerblue;
+            }
+            .project-details{
+                border: 1px solid black;
+                margin: 20px;
+                width: 95%;
+                height: 100px;
+                padding: 10px;
+
+            }
+
+            .project-description{
+                padding-top: 13px;
+            }
+
+            .contact-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .contact-input{
+                display: grid;
+                grid-template-rows: repeat(4,1fr);
+                grid-template-rows: repeat(1,fr);
+                padding-top: 20px;
+            }
+            .Contact-element{
+                padding: 5px;
+            }
+            button{
+                background-color: dodgerblue;
+                padding: 7px;
+            }
+            .contact-title{
+                color: dodgerblue;
+            }
+            @media(max-width:480px){
+
+                 .navbar{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: dodgerblue;
+                padding-top: 10px;
+                color: white;
+               
+                font-size: 1rem;
+                font-weight: 350px;
+                height: 80px;
+            }
+
+            .title{
+               
+                font-size: 1.5rem;
+            
+            }
+            
+
+            .skills-title{
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+
+            #skills{
+             margin: 10px;
+             height: 2.5rem;
+             width: 80%;
+             background-color: #e3e8ea;
+             border: 0;
+             
+            }
+
+            .skills-section{
+                color: dodgerblue;
+            }
+
+            .Project-title{
+                padding-top: 10px;
+                padding-left: 10px;
+                color: dodgerblue;
+            }
+            .project-details{
+                border: 1px solid black;
+                margin: 10px;
+                width: 85%;
+                height: 80px;
+              
+
+            }
+
+           
+
+            .contact-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .contact-input{
+                display: grid;
+                grid-template-rows: repeat(4,1fr);
+                grid-template-rows: repeat(1,fr);
+                padding-top: 20px;
+            }
+            .Contact-element{
+                
+            }
+            button{
+                background-color: dodgerblue;
+                padding: 7px;
+            }
+            .contact-title{
+                color: dodgerblue;
+            }
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h2 class="title">Krishna Kumar</h2>
+                <p class="subtitle">Brief introduction about yourself</p>
+            </nav>
+        </header>
+
+        <section class="skills-section">
+            <h2 class="skills-title">Skills</h2>
+            <input type="text" name="skills" id="skills" placeholder="Add  your skills. ">
+        </section>
+
+        <section class="project-section">
+            <h2 class="Project-title" >Projects</h2>
+           
+            <div class="project-details">
+                <h3 class="Project-sub-title"> Project Name</h3>
+                <p class="project-description"> Project description goes here.</p>
+            </div>
+        </section>
+
+        <footer class="contact-details">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact-input">  
+            <input type="text" placeholder="Your Name"   class="Contact-element">
+            <br>
+            <input type="email" name="email" class="Contact-element" placeholder="Your Email" >
+            <br>
+            <textarea name="" class="Contact-element" cols="30" rows="2" placeholder="Your Messgae" ></textarea>
+             <br> 
+            <button>Send Message</button>
+
+        </footer>
+    </body>
+    </html>
